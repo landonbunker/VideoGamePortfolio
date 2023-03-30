@@ -1,14 +1,14 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Title:</strong>
+  <strong>Title of Video Game:</strong>
   <%= @project.title %>
 </p>
 
 <p>
-  <strong>Description:</strong>
+  <strong>Review:</strong>
   <%= @project.description %>
 </p>
 
-<%= link_to 'Edit', edit_project_path(@project) %> |
-<%= link_to 'Back', projects_path %>
+<%= button_to 'Edit Review', edit_project_path(@project), method:"get" %> 
+<%= button_to 'Back', projects_path, method:"get" %>
